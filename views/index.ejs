@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto S</title>
+</head>
+<body>
+    <h1>Teste</h1>
+        <p>Nome:<%= nome %></p>
+        <p>Linguagem Fav:<%= lang %></p>
+        <p>Empresa:<%= empresa %></p>
+        <p>Inscritos:<%= inscritos %></p><br><hr>
+        <% produtos.forEach(function(produtos){ %>
+            <p><%= produtos.nome %>: <%= produtos.preco %></p>
+        <% }) %>
+</body>
+</html>
